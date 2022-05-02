@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Esqueleto.css">
+    <link rel="stylesheet" href="css/Contacto.css">
+    <script src="https://kit.fontawesome.com/1c53cb40e6.js" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+    
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Esqueleto</title>
+</head>
+
+<body>
+    <div id="Contenedor">
+        <header>
+            <div id="logo">
+                <img src="img/logoCineSoya.jpeg" alt="logo" height="100" width="200" class="logoMain">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Esqueleto.html">Inicio</a></li>
+                    <li><a href="Galeria.html">Galeria</a></li>
+                    <li><a href="Acerca De.html">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="Creadores.html">Creadores</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+               <div id="DescYSlider">
+                <div class="Desc">
+                    <p>
+                        ¡Bienvenido a la mejor experiencia en cine que encontrarás en El Salvador! Recuestate en las
+                        cómodas butacas que ofrece la sala para ti y goza de los estrenos del séptimo arte que se
+                        estrenan mundialmente para estar a la vanguardia.
+                    </p>
+                </div>
+                <div class="Slider">
+                    <ul>
+                        <li><img src="img/Slider/Distrito9.jpg" alt="Distrito9" width="550" height="300"></li>
+                        <li><img src="img/Slider/Hereditary.jpg" alt="Hereditary" width="550" height="300"></li>
+                        <li><img src="img/Slider/Lucy.jpg" alt="Lucy" width="550" height="300"></li>
+                        <li><img src="img/Slider/Marley&Me.jpg" alt="Marley&Me" width="550" height="300"></li>
+                        <li><img src="img/Slider/Spiderman.jpg" alt="Distrito9" width="550" height="300"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+         
+            <div id="Contenido">
+                <div class="info-form">
+                    <h2 class="texformulario">¡Contáctanos!</h2>
+                    <p clas="texformulario">Ponte en contacto con nosotros y conoce más sobre nuestras promociones y
+                        mucho más.
+                    </p>
+                    <a clas="texformulario" href="#"><i class="fa fa-phone"></i> 7629-2812</a>
+                    <a clas="texformulario" href="#"><i class="fa fa-envelope"></i> soyacine@gmail.com.</a>
+                    <a clas="texformulario" href="#"><i class="fa fa-map-marked"></i> Soyapango, El Salvador.</a>
+                    <div class="col-sm-12 col-md-4 profile-top-1" ng-show="ShowLocalizacion">
+                        <div id="map"></div>
+                    </div>
+                </div>
+                <form id="formulario">
+                    <input type="text" name="nombre" placeholder="Tu Nombre" class="campo" id="nombre">
+                    <input type="text" name="gmail" placeholder="Ingresa tu gmail" class="campo" id="gmail">
+                    <textarea name="mensaje" placeholder="Tu Mensaje..." id="mensaje"></textarea>
+                    <div class="alertFormulario" id="alertFormulario">
+                        <p id="textAlert"></p>
+                    </div>
+                    <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+                </form>
+            </div>
+    </div>
+    </section>
+    <footer>
+        <p>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </p>
+    </footer>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="js/mapa.js"></script>
+<script type="text/javascript" src="js/formulario.js"></script>

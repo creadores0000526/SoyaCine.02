@@ -1,0 +1,55 @@
+.Crea{
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+    color: white;
+    background-color: goldenrod;
+}
+.Creadores{
+    overflow: hidden;
+    display: block;
+}
+.primer, .segund, .tercer{
+    overflow: hidden;
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+.primer .Perfil,.segund .Perfil,.tercer .Perfil{
+    margin: 0 auto;
+}
+
+.Perfil{
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+    position: relative;
+    background-color: rgb(136, 0, 79);
+    margin: 15px;
+}
+.Perfil img{
+    width: 50%;
+    margin: 10px 0;
+}
+.h4{
+    font-size: 13px;
+    padding: 10px;
+}
+@media screen and (max-width: 480px) {
+    /*Celus*/
+    .Perfil{
+        width: 90%;
+        margin-top: 100px;
+    }
+    .Creadores{
+        display:inline;
+    }
+    .primer, .segund, .tercer{
+        display: inline;
+    }
+    .primer .Perfil, .segund .Perfil, .tercer .Perfil{
+        margin-bottom: 10px;
+    }
+    
+}

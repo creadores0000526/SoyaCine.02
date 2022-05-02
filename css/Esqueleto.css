@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Detalles del contenedor*/
+#Contenedor{
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 75%;
+    min-width: 603px;
+    background-color: rgb(27, 2, 2);
+    padding: 5px;
+}
+body{
+    background-color: black;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size:cover ;
+    background-image: url(../img/Fondo.jpg);
+}
+/*Parte del logo y de los distintos menús*/
+header{
+    background-color: rgb(34, 2, 18);
+    display: flex;
+}
+nav ul{
+    list-style: none;
+    background-color: rgb(34, 2, 18);
+    width: 100%;
+}
+nav li{
+    line-height: 2.7em;
+    display: inline-flex;
+}
+nav a{
+    color: rgb(228, 201, 201);
+    display: block;
+    padding: 0 41px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: rgb(61, 7, 37);
+    color: white;
+}
+/*Reglas generales para la descripción y los contenedores
+de la descripción y el Slider*/
+section{
+    margin-top: 5px;
+    overflow: hidden;
+}
+#DescYSlider{
+    padding: 5px;
+    display: flex;
+    background-color: rgb(77, 3, 58);
+}
+.Desc{
+    color: rgb(240, 229, 229);
+    text-align: justify;
+    font-weight:bolder ;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+    margin-right: 5px;
+    background-color: rgb(122, 19, 76);
+    height: auto;
+    border-radius: 25px;
+}
+/*Slider*/
+.Slider{
+    float: right;
+    width: 600%;
+    overflow: hidden;
+}
+.Slider ul{    
+display: flex;
+width: 500%;
+animation: cambio 20s infinite alternate;
+}
+.Slider li{
+    list-style: none;
+    width: 100%;
+}
+.Slider img{
+    width: 100%;
+}
+@keyframes cambio {
+    0%{margin-left: 0;}
+    5%{margin-left: 0;}
+
+    10%{margin-left: -100%;}
+    30%{margin-left: -100%;}
+
+    35%{margin-left: -200%;}
+    55%{margin-left: -200%;}
+    
+    60%{margin-left: -300;}
+    80%{margin-left: -300%;}
+ 
+    85%{margin-left: -400;}
+    100%{margin-left: -400%;}
+}
+
+
+/*Contenido*/
+#ContenidoEx{
+    overflow: hidden;
+    display: inline-flex;
+}
+#titulo{
+    margin-right: 15px;
+}
+
+.TituloCartelera{
+    background-color: #dfb22b;
+	color: white;
+    margin: 5px 0px;
+    font-size: 30px;
+    text-align: center;
+}
+.h1{
+    background-color: rgb(122, 19, 76);
+    margin-bottom: 10px;
+}
+
+h2{
+	color: white;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+
+h4{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #df448c;
+	font-weight: bolder;
+    text-align: justify;
+}
+#galeria{
+	color: black;
+    height: auto;
+}
+
+#texto{
+	float: right;
+	text-align: center;
+}
+.peli img{
+    width: 70%;
+}
+.peli{
+	width: 40%;
+    padding: 2%;
+    background-color: rgb(141, 24, 88);
+    margin: 1.5%;
+    border: solid 1px black;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    transition: 1s;
+}
+.peli:hover {
+    background-color: #b90e5e;
+}
+
+.boton{
+    background-color: #464d52;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    font-size: .9em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background 1s;
+}
+.boton:hover{
+    background: #5077c7;
+}
+
+.boton a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: block;
+}
+
+#covi{
+    top: -40px;
+	color: white;
+	padding: 2%;
+    background-color: rgb(122, 19, 76);
+    margin: 40px 1.5%;
+    border: solid 1px black;
+    border-radius: 10px;
+    float: right;
+    text-align: center;
+}
+#covi img{
+    width: 100%;
+}
+li{
+	list-style-type: none;
+}
+
+span{
+	color: white;
+	font-size: 26px;
+	text-align: center;
+}
+
+
+/*footer*/
+footer{
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    text-align: center;
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+    /* Estilos para tablets */
+    body{
+        background-image: none;
+    }
+}
+   @media screen and (max-width: 480px) {
+    /* Estilos para moviles */
+    #Contenedor{
+        width: 100%;
+        min-width: 438.5px;
+        background-image: none;
+        background-color: rgb(61, 0, 31);
+    }
+    #logo{
+        display: none;
+    }
+    section .Slider{
+        display: none;
+    }
+   
+    nav a{
+        color: rgb(228, 201, 201);
+        display: block;
+        padding: 0 15px;
+        text-decoration: none;
+    }
+    nav a:hover{
+        background-color: rgb(61, 7, 37);
+        color: white;
+        text-decoration: underline;
+    }
+    #covi{
+        margin: 0 0 5px 0;
+        width: 95%;
+        overflow: hidden;
+    }
+    #covi img{
+        width: 70px;
+        height: 70px;
+    }
+    #covi ul{
+        padding: 20px;
+        margin: 0;
+        width: 90%;
+        display:flex;
+    }
+    span{
+        font-size: 15px;
+    }
+    #ContenidoEx{
+        background-color: #464d52;
+        display:inline;
+    }
+   }
+   
